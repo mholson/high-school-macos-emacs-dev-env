@@ -10,3 +10,4 @@
 # Undo-tree save-files
 *.~undo-tree
 .DS_Store
+doom/flycheck_init.el
