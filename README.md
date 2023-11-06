@@ -68,6 +68,7 @@ Using brew to install [emacs-plus](https://github.com/d12frosted/homebrew-emacs-
 Since we are installing from a GitHub repository, we will need to add this a third-party repository 
 (known as a "tap") by running the `brew tap` command. This is just adding to the default list of formulae that Homebrew tracks, updates, and installs from.
 
+``` shell
 brew tap d12frosted/emacs-plus
 ```
 
@@ -110,8 +111,8 @@ It is time to run emacs for the first time to create the configuration files.  Y
 
 Now copy the `doom` directory from the repository files you download and move it to into your `~/.config` directory.  Note that `~` means your home directory and that the directory `.config` is hidden.  
 
->[!IMPORTANT]
-The config for the courses that I teach is designed for setting up a MacBook with a **swedish keyboard**.
+> [!IMPORTANT]
+> The config for the courses that I teach is designed for setting up a MacBook with a **swedish keyboard**.
 
 Before you open doom emacs again, we are going to make sure it is updated with the new config files in place.
 
@@ -127,3 +128,24 @@ M-x nerd-icons-install-fonts
 ```
 
 Need help getting started with doom emacs, check out my [doom emacs cheetsheet](https://github.com/mholson/mho_bespoke_notes#doom-emacs-cheatsheet).
+
+## Specific Packages for Web Development
+
+Doom emacs will be using `tidy-html5`to format html 
+code.  We will also be making use of javascript and to run this code within org-mode code blocks using babel, we will download [npm](https://www.npmjs.com)
+
+``` shell
+brew install tidy-html5 npm
+```
+
+## Install Anaconda.
+
+![Anaconda Install](assets/anaconda-m-macos-download.png)
+
+It is now time to install [Anaconda](https://www.anaconda.com/download) to maintain our python installation.
+
+> [!WARNING]
+> Make sure you choose the correct Apple architecture.
+
+Once the install is complete we will also want to
+add it to our `PATH` fs.
