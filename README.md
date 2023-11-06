@@ -148,4 +148,52 @@ It is now time to install [Anaconda](https://www.anaconda.com/download) to maint
 > Make sure you choose the correct Apple architecture.
 
 Once the install is complete we will also want to
-add it to our `PATH` fs.
+add it to our `PATH`.  Start by navigating to where the conda command is located and then running `conda init`
+
+``` shell
+cd ~/anaconda3/bin
+conda init
+```
+
+### Packages Specific for Programming
+
+``` shell
+conda install -c conda-forge textual
+```
+
+## Install GitHub Desktop 
+
+After downloading the [Github Desktop](https://central.github.com/deployments/desktop/desktop/latest/darwin-arm64) application, make sure you move it to your `Applications` directory before running it for the first time.  Make sure you setup GitHub with your school email address.
+
+# Updates
+
+## Update Homebrew 
+
+``` shell
+brew update
+brew upgrade
+brew cleanup
+```
+
+## Update Conda
+
+``` shell
+conda clean --all
+conda update anaconda-navigator
+conda update conda
+conda update --allowing
+conda clean --all
+```
+
+## Update Doom Emacs 
+
+``` shell
+doom upgrade 
+doom sync
+```
+
+If you run in to any trouble you can always call the doctor,
+
+``` shell
+doom doctor 
+```
