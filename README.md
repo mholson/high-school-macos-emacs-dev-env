@@ -19,7 +19,7 @@ The primary goal is to create a consistent development environment across all ma
 # Setup Instructions
 
 
-> [!INFORMATION]
+> [!NOTE]
 > Video on how to install Homebrew and Doom Emacs 
 > ![YouTube Video Setting up Doom Emacs](https://youtu.be/A6SxH9lUWV0)
 
