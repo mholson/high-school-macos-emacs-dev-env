@@ -1,7 +1,8 @@
 # High School Web-Development & Programming Environment Setup
 
-[![Installing emacs-plus and Doom on a Macbook Air M1 using Homebrew](http://img.youtube.com/vi/A6SxH9lUWV0?si/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQA6SxH9lUWV0?si "Installing emacs-plus and Doom on a Macbook Air M1 using Homebrew (August 2023)")
+![Doom Emacs Setup](/assets/emacs_install_emacs-plus-doom.png)
 
+Watch the YouTube video: ![Installing emacs-plus and Doom on a Macbook Air M1 using Homebrew](https://www.youtube.com/embed/A6SxH9lUWV0?si=7_F8CXkxaoP9RtQm).
 
 Welcome to the GitHub repository dedicated to setting up MacBook computers for teaching high school courses in web development and programming. This repository is designed to streamline the environment setup, allowing educators and students to focus on learning and teaching without the overhead of complex installation processes.
 
@@ -19,6 +20,7 @@ The primary goal is to create a consistent development environment across all ma
 
 # Setup Instructions
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A6SxH9lUWV0?si=7_F8CXkxaoP9RtQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Download the files from this repository
 
