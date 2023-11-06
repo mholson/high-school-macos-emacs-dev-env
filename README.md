@@ -18,21 +18,17 @@ The primary goal is to create a consistent development environment across all ma
 
 # Setup Instructions
 
-
-> [!NOTE]
-> Video on how to install Homebrew and Doom Emacs 
-> ![YouTube Video Setting up Doom Emacs](https://youtu.be/A6SxH9lUWV0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A6SxH9lUWV0?si=7_F8CXkxaoP9RtQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Download the files from this repository
 
-
+![Download the repository setup files](/assets/mho-teaching-config.png)
 
 ## Install xcode command line developer tools
 
 ``` shell
 x-code-select --install
 ```
-
 
 ## Install Homebrew
 
