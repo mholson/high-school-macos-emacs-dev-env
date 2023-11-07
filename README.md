@@ -166,9 +166,11 @@ conda install -c conda-forge textual
 After downloading the [Github Desktop](https://central.github.com/deployments/desktop/desktop/latest/darwin-arm64) application, make sure you move it to your `Applications` directory before running it for the first time.  Make sure you setup GitHub with your school email address.
 
 # Updates
+
 <div class="ghd-spotlight ghd-spotlight-note border rounded-1 my-3 p-3 f5 color-border-accent-emphasis color-bg-accent">
 <p><strong>Note</strong>: This is a test</p>
 </div>
+
 ## Update Homebrew 
 
 ``` shell
