@@ -1,4 +1,4 @@
-# High School Web-Development & Programming Environment Setup
+# High School Programming Development Environment Setup
 
 ![Doom Emacs Setup](/assets/emacs_install_emacs-plus-doom.png)
 
