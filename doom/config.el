@@ -69,6 +69,22 @@
 
 
 ;;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+;; DIRED
+;;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+;; Think of a hook in Emacs as a to-do list that Emacs checks when certain things happen.
+;; For example, when you open a folder in Emacs, it checks the "open folder to-do list" to
+;; see if there's anything extra it should do.
+
+;; add-hook is like adding a new task to that to-do list. So when you use add-hook, you're
+;; telling Emacs, "Hey, next time you're doing this thing, also do this extra task I'm
+;; giving you."
+
+;; For instance, if you want Emacs to always hide the extra file details whenever you're
+;; looking at a list of files (which is called "Dired" mode in Emacs), you would add a task
+;; to the "when opening a file list" to-do list that says "hide details."
+(add-hook 'dired-mode-hook 'dired-hide-details-mode)
+
+;;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ;; Org-Mode
 ;;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ;; Add Week numbers to Agenda Calendar
