@@ -64,7 +64,7 @@ cd[SPC]
 source .zshrc
 ```
 
-## Install Emacs-Plus
+## Step 5: Install Emacs-Plus
 
 Using brew to install [emacs-plus](https://github.com/d12frosted/homebrew-emacs-plus).
 
@@ -93,7 +93,7 @@ ln -s /opt/homebrew/opt/emacs-plus@29/Emacs.app /Applications
 
 In the event that you opened emacs, you will need to close it and then remove the configuration directory `.emacs.d` that was created when you started emacs for the first time.
 
-## Install Doom Emacs
+## Step 6: Install Doom Emacs
 
 Before we install [Doom Emacs](https://github.com/doomemacs/doomemacs), we first need 
 to install some software dependencies using `brew`.
@@ -132,16 +132,26 @@ M-x nerd-icons-install-fonts
 
 Need help getting started with doom emacs, check out my [doom emacs cheetsheet](https://github.com/mholson/mho_bespoke_notes#doom-emacs-cheatsheet).
 
-## Specific Packages for Web Development
+## Step 7: Specific Packages for Web Development
+
+### Install tidy-html5
 
 Doom emacs will be using `tidy-html5`to format html 
-code.  We will also be making use of javascript and to run this code within org-mode code blocks using babel, we will download [npm](https://www.npmjs.com)
+code.  
 
 ``` shell
 brew install tidy-html5 npm
 ```
 
-## Install Anaconda.
+### Install npm 
+
+While JavaScript can be run in a browser console, we will want to be able to run JavaScript code both within org-mode code blocks and the command line, so we will need [npm](https://www.npmjs.com)
+
+``` shell
+brew install npm
+```
+
+### Install Anaconda.
 
 ![Anaconda Install](assets/anaconda-m-macos-download.png)
 
@@ -158,13 +168,13 @@ cd ~/anaconda3/bin
 conda init
 ```
 
-### Packages Specific for Programming
+#### Packages Specific for Programming
 
 ``` shell
 conda install -c conda-forge textual
 ```
 
-## Install GitHub Desktop 
+## Step 8: Install GitHub Desktop 
 
 After downloading the [Github Desktop](https://central.github.com/deployments/desktop/desktop/latest/darwin-arm64) application, make sure you move it to your `Applications` directory before running it for the first time.  Make sure you setup GitHub with your school email address.
 
