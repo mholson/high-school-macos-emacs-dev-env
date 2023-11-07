@@ -2,35 +2,38 @@
 
 ![Doom Emacs Setup](/assets/emacs_install_emacs-plus-doom.png)
 
-Watch the YouTube video: [Installing emacs-plus and Doom on a Macbook Air M1 using Homebrew](https://www.youtube.com/embed/A6SxH9lUWV0?si=7_F8CXkxaoP9RtQm).
+Watch the YouTube video (August 2023 Edition): [Installing emacs-plus and Doom on a Macbook Air M1 using Homebrew](https://www.youtube.com/embed/A6SxH9lUWV0?si=7_F8CXkxaoP9RtQm).
 
-Welcome to the GitHub repository dedicated to setting up MacBook computers for teaching high school courses in web development and programming. This repository is designed to streamline the environment setup, allowing educators and students to focus on learning and teaching without the overhead of complex installation processes.
+Welcome to the GitHub repository designed to simplify MacBook (swedish keyboards) setups for the high school web development and programming courses that I teach.
 
-The primary goal is to create a consistent development environment across all machines using a series of scripts and configuration files. This ensures that all students have the same starting point and can work on projects with minimal setup-related issues.
+The purpose is to provide an installation procedure that facilitates a smooth and efficient setup process for educators and students alike, minimizing the initial overhead typically associated with editing configuration files during installation.  At the same time, it should help the student incrementally become more aware of the development environment they are settign up (not just running an install script).
+
 
 ## Features
 
 **Homebrew Installation:** Homebrew, the missing package manager for macOS, which simplifies the installation of software on Apple's macOS operating system.
 
-**Emacs-Plus and Doom Emacs:** Steps to install Emacs-Plus, a versatile version of GNU Emacs with additional features, and Doom Emacs, a configuration framework for GNU Emacs. A pre-defined Doom Emacs config directory is included to help students quickly set up an efficient and pleasant editing experience that’s tuned for the web development and programming courses.
+**Emacs-Plus and Doom Emacs:** Steps to install Emacs-Plus, a version of GNU Emacs with additional features, and Doom Emacs, a configuration framework for Emacs. A boilerplate Doom Emacs configuration directory is included as part of this repository to ensure a student with no programming experience can quickly setup a development environment that is tuned for the web development and programming courses they are taking. It also acts as backup in the event that something goes wrong while editing their configuration files later.
 
-**Anaconda for Python:** Instructions on how to use Anaconda to manage Python packages and environments, ensuring a consistent and reproducible Python setup across all machines.
+**Anaconda for Python:** Instructions on how to setup Anaconda to manage Python packages and environments, ensuring a consistent and reproducible Python setup across all machines.
+
+**Node Package Manager (npm) for Javascript:**  A one line brew install in the terminal to setup the JavaScript package manager and command-line client. 
 
 **Update Procedures:** Detailed instructions on how to keep the MacBook computers updated with the latest tools and security patches.
 
-# Setup Instructions
+# Setup Procedure
 
-## Download the files from this repository
+## Step 1: Download the files from this repository
 
 ![Download the repository setup files](/assets/mho-teaching-config.png)
 
-## Install xcode command line developer tools
+## Step 2: Install xcode command line developer tools
 
 ``` shell
 x-code-select --install
 ```
 
-## Install Homebrew
+## Step 3: Install Homebrew
 
 > [!IMPORTANT]
 > xcode command line developer tools must be installed first.
@@ -38,26 +41,26 @@ x-code-select --install
 We will be using [Homebrew](https://brew.sh) to manage the software on our MacBooks.  
 [Download the MacOs package installer](https://github.com/Homebrew/brew/releases/latest)
 
-## Update your .zshrc file
+## Step 4: Add the .zshrc Config File 
 
 We need to make sure that the command `brew` is on your PATH, which means you can run it 
 from your terminal shell.  Since we are using the **zsh** shell, 
 I have included an `dot.zshrc`, I have updated this file for you.
 
-Move the file `dot.zshrc`from the files you downloaded to your home directory `SHIFT-CMD-H`.
+Move the file `dot.zshrc`from the repository files you downloaded to your home directory using *Finder*.  To quickly change into the HOME directory use the following keyboard shortcut:`SHIFT`+`CMD`+`H`.
 
-Since `dot.zshrc` is a hidden dot file, we should toggle the Finder app to view hidden 
-files by pressing `SHIFT-CMD-.`
+Since `dot.zshrc` is a hidden dot file, we should toggle the **Finder** app to view hidden 
+files by pressing `SHIFT`+`CMD`.
 
 Rename `dot.zshrc` to `.zshrc`
 
 To have the shell apply the changes you've made to the `.zshrc` file, without having to open a new terminal session, run the following from your terminal while in your home directory.
 
 > [!NOTE]
-> Quick Tip!  You can quickly navigate to your home directory from the terminal by using the command `cd SPACE`, where `SPACE` is one space created with your space-bar.
+> Quick Tip!  You can quickly navigate to your home directory from the terminal by using the command `cd [SPC]`, where `[SPC]` is one space created with your space-bar key.
 
 ``` shell
-cd [SPACE]
+cd[SPC]
 source .zshrc
 ```
 
@@ -167,10 +170,6 @@ After downloading the [Github Desktop](https://central.github.com/deployments/de
 
 # Updates
 
-<div class="ghd-spotlight ghd-spotlight-note border rounded-1 my-3 p-3 f5 color-border-accent-emphasis color-bg-accent">
-<p><strong>Note</strong>: This is a test</p>
-</div>
-
 ## Update Homebrew 
 
 ``` shell
@@ -185,10 +184,14 @@ brew cleanup
 conda clean --all
 conda update anaconda-navigator
 conda update conda
-conda update --allowing
+conda update --all
 conda clean --all
 ```
 
+## Update npm 
+``` shell
+npm update
+```
 ## Update Doom Emacs 
 
 ``` shell
